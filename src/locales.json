@@ -146,23 +146,30 @@
   "common": {
     "en": {
       "languageNotAvailable": "Sorry, but your language is not available here.",
-      "chooseALanguage": "Choose a language."
+      "chooseALanguage": "Choose a language.",
+      "lastUpdate": "Last Update: "
     },
     "de": {
       "languageNotAvailable": "Deine Sprache ist hier leider nicht verfügbar.",
-      "chooseALanguage": "Wähle eine Sprache."
+      "chooseALanguage": "Wähle eine Sprache.",
+      "lastUpdate": "Letzte Änderung: "
     },
     "fr": {
       "languageNotAvailable": "Malheureusement, ta langue n'est pas disponible ici.",
-      "chooseALanguage": "Choisissez votre Langue."
+      "chooseALanguage": "Choisissez votre Langue.",
+      "createPdf": "Créer PDF"
     },
     "ar": {
       "languageNotAvailable": "للأسف، لغتك ليست متاحة.",
-      "chooseALanguage": "اختار اللغة."
+      "chooseALanguage": "اختار اللغة.",
+      "lastUpdate": "اخر تحديث: ",
+      "createPdf": "إنشاء ملف PDF"
     },
     "fa": {
       "languageNotAvailable": "متاسفانه زبان شما در اینجا موجود نیست.",
-      "chooseALanguage": "یک زبان را انتخاب کنید."
+      "chooseALanguage": "یک زبان را انتخاب کنید.",
+      "lastUpdate": "آخرین به روزآوری: ",
+      "createPdf": "پی دی اف بسازید"
     },
     "ru": {
       "languageNotAvailable": "К сожалению, ваш язык здесь не используется.",
@@ -560,25 +567,6 @@
     "fa": {
     },
     "ru": {
-    }
-  },
-  "common": {
-    "ar": {
-      "lastUpdate": "اخر تحديث: ",
-      "createPdf": "إنشاء ملف PDF"
-    },
-    "de": {
-      "lastUpdate": "Letzte Änderung: "
-    },
-    "en": {
-      "lastUpdate": "Last Update: "
-    },
-    "fa": {
-      "lastUpdate": "آخرین به روزآوری: ",
-      "createPdf": "پی دی اف بسازید"
-    },
-    "fr": {
-      "createPdf": "Créer PDF"
     }
   },
   "sprungbrett": {
