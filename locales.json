@@ -413,7 +413,9 @@
       "wantedInformation": "Welche Informationen fehlen hier?",
       "feedbackSent": "Feedback abgeschickt",
       "thanksMessage": "Vielen Dank für Ihr Feedback. Damit helfen Sie uns, unsere Inhalte und die Integreat-App zu verbessern. Wir würden uns über weiteres Feedback freuen.",
-      "close": "Schließen"
+      "close": "Schließen",
+      "negativeRating": "Diese Seite ist nicht hilfreich",
+      "positiveRating": "Diese Seite ist hilfreich"
     },
     "en": {
       "technicalTopics": "Technical topics",
@@ -436,7 +438,9 @@
       "wantedInformation": "What information is missing?",
       "feedbackSent": "Feedback sent",
       "thanksMessage": "Thank you for your feedback. This will help us to improve our content and the Integreat app. We would be happy to receive further feedback.",
-      "close": "Close"
+      "close": "Close",
+      "negativeRating": "This site is not useful",
+      "positiveRating": "This site is useful"
     },
     "fa": {
       "technicalTopics": "عملکردهای فنی",
