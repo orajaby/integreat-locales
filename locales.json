@@ -393,11 +393,11 @@
     "de": {
       "technicalTopics": "Technische Funktionen",
       "contentOfCity": "Inhalte von {{city}}",
-      "extra": "Extra \"{{extra}}\"",
-      "events": "Veranstaltungen",
+      "contentOfExtra": "Extra \"{{extra}}\"",
       "disclaimer": "Kontakt und Impressum",
       "searchFor": "Suche nach",
       "contentOfPage": "Inhalt der Seite \"{{page}}\"",
+      "contentOfEvent": "Inhalt der Veranstaltung \"{{event}}\"",
       "send": "Abschicken",
       "failedSendingFeedback": "Beim Senden des Feedbacks ist ein Fehler aufgetreten.",
       "feedback": "Feedback",
@@ -418,8 +418,6 @@
     "en": {
       "technicalTopics": "Technical topics",
       "contentOfCity": "Contents of {{city}}",
-      "extra": "Extra '{{extra}}'",
-      "events": "Events",
       "disclaimer": "Imprint and contact",
       "searchFor": "Search for",
       "contentOfPage": "Content of the site '{{page}}'",
@@ -443,8 +441,6 @@
     "fa": {
       "technicalTopics": "عملکردهای فنی",
       "contentOfCity": "محتویاتِ",
-      "extra": "اضافی",
-      "events": "XXX",
       "disclaimer": "مجوز \u200Eو اطلاعات تماس",
       "searchFor": "جستجو برای",
       "contentOfPage": "محتوای صفحه",
@@ -464,8 +460,6 @@
     "fr": {
       "technicalTopics": "Fonctions techniques",
       "contentOfCity": "Contenu de",
-      "extra": "Extra",
-      "events": "XXX",
       "disclaimer": "Mentions Légales",
       "searchFor": "Rechercher pour",
       "contentOfPage": "Contenu de la page",
