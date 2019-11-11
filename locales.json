@@ -599,5 +599,32 @@
       "noPois": "No Points of Interest available",
       "pois": "Points of Interest"
     }
+  },
+  "intro": {
+    "de": {
+      "search": "Suche",
+      "searchDescription": "Anhand von Schlagwörtern schnell die richtige Information finden",
+      "languageChange": "Sprachwechsel",
+      "languageChangeDescription": "Einfaches Umstellen der Sprache einzelner Seiten",
+      "events": "Veranstaltungen",
+      "eventsDescription": "Aktuelle Veranstaltungen und Termine in der Umgebung",
+      "offers": "Angebote",
+      "offersDescription": "Jobsuche, Praktikasuche und mehr in der Umgebung",
+      "inquiryTitle": "Berechtigungen",
+      "sentryTitle": "Hilf uns, Integreat zu verbessern",
+      "sentryDescription": "Klicke auf \"Akzeptieren\", um automatisch Absturzberichte zu senden",
+      "pushNewsTitle": "Push News",
+      "pushNewsDescription": "Erhalten Sie Benachrichtigungen für die neuesten lokalen News",
+      "skip": "Überspringen",
+      "next": "Weiter",
+      "accept": "Akzeptieren",
+      "refuse": "Ablehnen"
+    },
+    "en": {
+      "skip": "Skip",
+      "next": "Next",
+      "accept": "Accept",
+      "refuse": "Refuse"
+    }
   }
 }
