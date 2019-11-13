@@ -610,11 +610,12 @@
       "eventsDescription": "Aktuelle Veranstaltungen und Termine in der Umgebung",
       "offers": "Angebote",
       "offersDescription": "Jobsuche, Praktikasuche und mehr in der Umgebung",
-      "inquiryTitle": "Berechtigungen",
+      "inquiryTitle": "Einstellungen",
       "sentryTitle": "Hilf uns, Integreat zu verbessern",
-      "sentryDescription": "Klicke auf \"Akzeptieren\", um automatisch Absturzberichte zu senden",
       "pushNewsTitle": "Push News",
       "pushNewsDescription": "Erhalten Sie Benachrichtigungen für die neuesten lokalen News",
+      "locationTitle": "Orte vorschlagen",
+      "locationDescription": "Standortzugriff aktivieren um nahegelegene Orte vorschlagen zu lassen",
       "skip": "Überspringen",
       "next": "Weiter",
       "accept": "Akzeptieren",
@@ -624,7 +625,8 @@
       "skip": "Skip",
       "next": "Next",
       "accept": "Accept",
-      "refuse": "Refuse"
+      "refuse": "Refuse",
+      "inquiryDescription": "By clicking on \"Accept\" you allow us to send automatic crash reports to improve the Integreat App."
     }
   }
 }
