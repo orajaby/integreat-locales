@@ -611,22 +611,16 @@
       "offers": "Angebote",
       "offersDescription": "Jobsuche, Praktikasuche und mehr in der Umgebung",
       "inquiryTitle": "Einstellungen",
-      "sentryTitle": "Hilf uns, Integreat zu verbessern",
+      "sentryTitle": "Absturzberichte senden",
+      "sentryDescription": "Hilf uns, mit automatischen Absturzberichten Integreat zu verbessern",
       "pushNewsTitle": "Push News",
       "pushNewsDescription": "Erhalten Sie Benachrichtigungen für die neuesten lokalen News",
       "locationTitle": "Orte vorschlagen",
       "locationDescription": "Standortzugriff aktivieren um nahegelegene Orte vorschlagen zu lassen",
       "skip": "Überspringen",
       "next": "Weiter",
-      "accept": "Akzeptieren",
+      "continue": "Weiter",
       "refuse": "Ablehnen"
-    },
-    "en": {
-      "skip": "Skip",
-      "next": "Next",
-      "accept": "Accept",
-      "refuse": "Refuse",
-      "inquiryDescription": "By clicking on \"Accept\" you allow us to send automatic crash reports to improve the Integreat App."
     }
   }
 }
