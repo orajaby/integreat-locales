@@ -620,7 +620,7 @@
       "skip": "Überspringen",
       "next": "Weiter",
       "continue": "Weiter",
-      "refuse": "Ablehnen"
+      "acceptAll": "Alle Akzeptieren"
     }
   }
 }
