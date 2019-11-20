@@ -213,10 +213,12 @@
       "extras": "إضافات"
     },
     "en": {
-      "extras": "Extras"
+      "extras": "Extras",
+      "offers": "Offers"
     },
     "de": {
-      "extras": "Extras"
+      "extras": "Extras",
+      "offers": "Angebote"
     },
     "fa": {
       "extras": "اضافات"
