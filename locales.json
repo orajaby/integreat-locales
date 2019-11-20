@@ -10,7 +10,7 @@
         "mainDisclaimer": "Integreat - هيئة التحرير وجهة الاتصال",
         "notFound": "لم يتم العثور على الصفحة"
       },
-      "metaDescription": "ابحث عن البيانات المحلية والحالية، وكذلك الأحداث، وكن جزءًا من مدينتك الجديدة. تساعدك شركة Integreat على التواصل مع الآخرين وتدعم العديد من اللغات."
+      "metaDescription": "تطبيق إنتجريت هو دليلك الرقمي لألمانيا. تجد فيه معلومات وأحداث محلية ويقدم لك المشورة. دائمًا مُحدَّثة وبلغتك."
     },
     "de": {
       "pageTitles": {
@@ -22,7 +22,7 @@
         "mainDisclaimer": "Impressum und Kontakt - Integreat",
         "notFound": "Seite nicht gefunden"
       },
-      "metaDescription": "Finde lokale und aktuelle Informationen, Events und werde Teil deiner neuen Stadt. Integreat hilft dir dich mit anderen zu vernetzen und unterstützt mehrere Sprachen."
+      "metaDescription": "Integreat ist Ihr digitaler Guide für Deutschland. Finden Sie lokale Informationen, Events und Beratung. Immer aktuell und in Ihrer Sprache."
     },
     "en": {
       "pageTitles": {
@@ -35,7 +35,7 @@
         "pois": "Points of Interest",
         "notFound": "Fehler"
       },
-      "metaDescription": "Find local and relevant content, events and become part of your new city. Integreat helps you to connect to others and supports multiple languages."
+      "metaDescription": "Integreat is your digital guide to life in Germany. Discover local information, events and counselling. Always up to date and available in your language."
     },
     "fa": {
       "pageTitles": {
@@ -46,7 +46,7 @@
         "mainDisclaimer": "Integreat - مجوز \u200Eو اطلاعات تماس",
         "notFound": "صفحه پیدا نشد"
       },
-      "metaDescription": "آخرین اطلاعات و برنامه های محلی را ببینید و بخشی از شهر جدید خود شوید. Integreat به شما کمک می کند تا با دیگران ارتباط پیدا کنید و چندین زبان را پشتیبانی می کند."
+      "metaDescription": "Integreat\u200F راهنمای دیجیتالی شما در مورد آلمان است. اطلاعات، رویدادها و مشاوره محلی را بیابید. همیشه به روز و به زبان شما."
     },
     "fr": {
       "pageTitles": {
@@ -57,7 +57,34 @@
         "mainDisclaimer": "Mentions Légales - Integreat",
         "notFound": "Page introuvable"
       },
-      "metaDescription": "Trouve des informations, des événements locaux et actuels et intègre-toi dans ta nouvelle ville. Integreat t'aide à te faire un réseau et te soutient dans plusieurs langues."
+      "metaDescription": "Integreat est votre guide numérique pour l'Allemagne. Vous y trouverez des informations locales, des événements et des conseils, toujours à jour et dans votre langue."
+    },
+    "ro": {
+      "metaDescription": "Integreat constituie ghidul dvs. digital pentru Germania. Prin intermediul acestuia găsiți informații, evenimente locale și consiliere. Acestea sunt întotdeauna la zi și în limba dvs."
+    },
+    "tr": {
+      "metaDescription": "Integreat, Almanya'daki dijital rehberinizdir. Burada yerel bilgiler, etkinlikler ve öneriler bulabilirsiniz. Her zaman günceldir ve kendi dilinizdedir."
+    },
+    "pl": {
+      "metaDescription": "Integreat to e-przewodnik po Niemczech. Znajdziesz tu aktualne informacje, najnowsze wydarzenia i porady. Zawsze aktualne i w Twoim języku."
+    },
+    "ti": {
+      "metaDescription": "Integreat ናብ ጅርመን እትትኸድሉ ጂታል መምርሒ እዩ። ናይታ ሃገር ሓበሬታ፣ ፍፃመታትን ማዕዳን ድልዩ። ኩሉሻእ ብቋንቋኹም አሕድሱዎ።"
+    },
+    "ku": {
+      "metaDescription": "Integreat rêbera te ya dîcîtal derbarê Almanyayê ye. Zanyarî, rûdan û pêşniyarên xwecihî û navçeyî peyde bike. Hertim bi zimanê te bixwe û birojkirî ye."
+    },
+    "ru": {
+      "metaDescription": "Integreat — это ваш цифровой гид по Германии. Здесь вы найдете информацию о местных учреждениях, мероприятиях и консультационных центрах — всегда в актуальном виде и на вашем языке."
+    },
+    "so": {
+      "metaDescription": "Intgreat waa tilmaamahaaga dhijitalka ah ee Jarmalka. Ka hel macluumaad, dhacdooyin iyo talooyin. Marwalba wuu cusub yahay wuxuuna ku qoran yahay luuqadaada."
+    },
+    "hr": {
+      "metaDescription": "Integreat je vaš digitalni vodič za Njemačku. Pronađite lokalne informacije, događanja i savjetovanje. Uvijek s najaktualnijim podatcima i na vašem jeziku."
+    },
+    "es": {
+      "metaDescription": "Integreat es su guía digital para Alemania. Encuentre información local, eventos y consejos. Siempre actualizados y en su idioma."
     }
   },
   "layout": {
