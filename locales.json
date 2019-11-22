@@ -91,10 +91,7 @@
     "ar": {
       "imprintAndContact": "هيئة التحرير وجهة الاتصال",
       "privacy": "حماية المعلومات",
-      "extras": "إضافات",
       "categories": "الفئات",
-      "events": "XXX",
-      "noEvents": "XXX",
       "noLanguages": "غير متوفر بلغات أخرى",
       "noTranslation": "لا توجد ترجمة متاحة",
       "search": "البحث",
@@ -141,8 +138,6 @@
       "imprintAndContact": "Mentions légales et contact",
       "privacy": "Protection des données",
       "categories": "Catégorie",
-      "events": "XXX",
-      "noEvents": "XXX",
       "noLanguages": "Non disponible dans d'autres langues",
       "noTranslation": "Aucune traduction disponible",
       "search": "Rechercher",
@@ -203,7 +198,6 @@
     "ar": {
       "location": "الموقع",
       "date": "تاريخ",
-      "events": "XXX",
       "currentlyNoEvents": "ليس هناك فعاليات متوفرة حاليَاً"
     },
     "de": {
@@ -221,13 +215,11 @@
     "fa": {
       "location": "موقعیت مکانی",
       "date": "تاریخ",
-      "events": "XXX",
       "currentlyNoEvents": "هیچ رویداد جدیدی موجود نیست."
     },
     "fr": {
       "location": "Lieu",
       "date": "Date",
-      "events": "XXX",
       "currentlyNoEvents": "Pas d'événements actuels disponibles."
     }
   },
@@ -342,7 +334,6 @@
         "language": "متاسفانه زبان شما در اینجا موجود نیست.",
         "city": "متاسفانه شهر شما پیدا نشد.",
         "category": "متاسفانه این صفحه پیدا نشد.",
-        "event": "XXX",
         "extra": "متاسفانه این اضافه، پیدا نشد."
       },
       "loadingFailed": "خطایی هنگام بارگیری محتوا رخ داده است.",
@@ -357,7 +348,6 @@
         "language": "Malheureusement, ta langue n'est pas disponible ici.",
         "city": "Malheureusement, ta ville est introuvable.",
         "category": "Malheureusement, cette page est introuvable.",
-        "event": "XXX",
         "extra": "Malheureusement, cet extra est introuvable."
       },
       "loadingFailed": "Malheureusement, la page n'a pas pu être chargée.",
@@ -401,7 +391,6 @@
       "technicalTopics": "وظائف تقنية",
       "contentOfCity": "محتويات",
       "extra": "إضافي",
-      "events": "XXX",
       "disclaimer": "هيئة التحرير وجهة الاتصال",
       "searchFor": "البحث عن",
       "contentOfPage": "محتوى الصفحة",
