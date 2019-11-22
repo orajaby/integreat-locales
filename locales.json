@@ -104,7 +104,7 @@
     "de": {
       "imprintAndContact": "Impressum und Kontakt",
       "privacy": "Datenschutz",
-      "extras": "Extras",
+      "offers": "Angebote",
       "categories": "Kategorien",
       "events": "Veranstaltungen",
       "noEvents": "Keine Veranstaltungen",
@@ -117,7 +117,7 @@
     "en": {
       "imprintAndContact": "Imprint and contact",
       "privacy": "Data Privacy",
-      "extras": "Extras",
+      "offers": "Offers",
       "categories": "Categories",
       "events": "Events",
       "noEvents": "No events",
@@ -130,10 +130,7 @@
     "fa": {
       "imprintAndContact": "مجوز ‎و اطلاعات تماس",
       "privacy": "محافظت از داده ها",
-      "extras": "اضافات",
       "categories": "دسته​ها",
-      "events": "XXX",
-      "noEvents": "XXX",
       "noLanguages": "در زبان های دیگر موجود نیست",
       "noTranslation": "ترجمه موجود نیست",
       "search": "جستجو",
@@ -143,7 +140,6 @@
     "fr": {
       "imprintAndContact": "Mentions légales et contact",
       "privacy": "Protection des données",
-      "extras": "Extras",
       "categories": "Catégorie",
       "events": "XXX",
       "noEvents": "XXX",
@@ -237,21 +233,16 @@
   },
   "extras": {
     "ar": {
-      "extras": "إضافات"
     },
     "en": {
-      "extras": "Extras",
       "offers": "Offers"
     },
     "de": {
-      "extras": "Extras",
       "offers": "Angebote"
     },
     "fa": {
-      "extras": "اضافات"
     },
     "fr": {
-      "extras": "Extras"
     }
   },
   "landing": {
