@@ -294,6 +294,11 @@
         "event": "Dieses Event wurde leider nicht gefunden.",
         "extra": "Dieses Extra wurde leider nicht gefunden."
       },
+      "pageNotFound": "Diese Seite wurde leider nicht gefunden.",
+      "networkConnectionFailed": "Die Verbindung zum Server ist fehlgeschlagen.",
+      "networkRequestFailed": "Die Anfrage konnte nicht bearbeitet werden.",
+      "responseMappingFailed": "Die Antwort des Servers konnte nicht verarbeitet werden.",
+      "unknownError": "Ein unbekannter Fehler ist aufgetreten.",
       "tryAgain": "Erneut versuchen",
       "loadingFailed": "Die Seite konnte leider nicht geladen werden.",
       "chooseALanguage": "Wähle eine Sprache:",
@@ -315,6 +320,11 @@
         "extra": "Sorry, but this extra could not be found.",
         "poi": "Sorry, but this Point of Interest could not be found."
       },
+      "pageNotFound": "This page could not be found.",
+      "networkConnectionFailed": "The connection to the server failed.",
+      "networkRequestFailed": "The request could not be processed.",
+      "responseMappingFailed": "An error occurred while processing the server's response.",
+      "unknownError": "An unknown error occurred.",
       "tryAgain": "Try again",
       "loadingFailed": "Sorry, but the requested page could not be loaded.",
       "chooseALanguage": "Choose a language:",
@@ -325,7 +335,7 @@
         "extras": "Go to Extras"
       },
       "pageTitle": "Error",
-      "generalError": "An error occured",
+      "generalError": "An error occurred",
       "languageSwitchFailedTitle": "Language switch failed",
       "languageSwitchFailedMessage": "This language is not available offline, please reconnect and try again."
     },
