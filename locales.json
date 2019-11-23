@@ -244,14 +244,16 @@
     "de": {
       "searchCity": "Ort suchen",
       "nearbyPlaces": "Orte in der Nähe",
-      "noNearbyPlaces": "Es gibt keine Orte in der Nähe",
-      "locationError": "Um Orte in deiner Nähe anzeigen zu lassen musst du Ortungsdienste für Integreat aktivieren."
+      "noNearbyPlaces": "Keine Orte in der Nähe gefunden.",
+      "alert": "Hinweis",
+      "locationError": "Um Orte in der Nähe anzeigen zu lassen, müssen Ortungsdienste aktiviert werden."
     },
     "en": {
       "searchCity": "Search for a city",
       "nearbyPlaces": "Nearby",
-      "noNearbyPlaces": "No nearby places found",
-      "locationError": "Permission denied, please enable Integreat to use your location."
+      "noNearbyPlaces": "No nearby places found.",
+      "alert": "Alert",
+      "locationError": "Integreat needs permission to use your location to show nearby places."
     },
     "fa": {
       "searchCity": "جستجو بر اساس محل شما"
