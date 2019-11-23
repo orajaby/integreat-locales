@@ -235,12 +235,14 @@
       "searchCity": "Ort suchen",
       "nearbyPlaces": "Orte in der Nähe",
       "noNearbyPlaces": "Keine Orte in der Nähe gefunden.",
-      "locationError": "Um Orte in der Nähe anzeigen zu lassen müssen Ortungsdienste aktiviert werden."
+      "alert": "Hinweis",
+      "locationError": "Um Orte in der Nähe anzeigen zu lassen, müssen Ortungsdienste aktiviert werden."
     },
     "en": {
       "searchCity": "Search for a city",
       "nearbyPlaces": "Nearby",
       "noNearbyPlaces": "No nearby places found.",
+      "alert": "Alert",
       "locationError": "Integreat needs permission to use your location to show nearby places."
     },
     "fa": {
