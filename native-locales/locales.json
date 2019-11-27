@@ -1,0 +1,22 @@
+{
+    "native": {
+        "de": {
+        },
+        "en": {
+            "NSPhotoLibraryAddUsageDescription": "Integreat wants to save photos to your library",
+            "NSLocationWhenInUseUsageDescription": "Integreat needs permission to use your location to show nearby places."
+        },
+        "ar": {},
+        "fa": {},
+        "fr": {},
+        "ro": {},
+        "tr": {},
+        "pl": {},
+        "ti": {},
+        "ku": {},
+        "ru": {},
+        "so": {},
+        "hr": {},
+        "es": {}
+    }
+}
