@@ -152,10 +152,19 @@
   },
   "categories": {
     "de": {
-      "createPdf": "PDF Erstellen"
+      "createPdf": "PDF erstellen"
     },
     "en": {
       "createPdf": "Create PDF"
+    },
+    "fr": {
+      "createPdf": "Créer PDF"
+    },
+    "ar": {
+      "createPdf": "إنشاء ملف PDF"
+    },
+    "fa": {
+      "createPdf": "پی دی اف بسازید"
     }
   },
   "common": {
@@ -171,20 +180,17 @@
     },
     "fr": {
       "languageNotAvailable": "Malheureusement, ta langue n'est pas disponible ici.",
-      "chooseALanguage": "Choisissez votre Langue.",
-      "createPdf": "Créer PDF"
+      "chooseALanguage": "Choisissez votre Langue."
     },
     "ar": {
       "languageNotAvailable": "للأسف، لغتك ليست متاحة.",
       "chooseALanguage": "اختار اللغة.",
-      "lastUpdate": "اخر تحديث: ",
-      "createPdf": "إنشاء ملف PDF"
+      "lastUpdate": "اخر تحديث: "
     },
     "fa": {
       "languageNotAvailable": "متاسفانه زبان شما در اینجا موجود نیست.",
       "chooseALanguage": "یک زبان را انتخاب کنید.",
-      "lastUpdate": "آخرین به روزآوری: ",
-      "createPdf": "پی دی اف بسازید"
+      "lastUpdate": "آخرین به روزآوری: "
     },
     "ru": {
       "languageNotAvailable": "К сожалению, ваш язык здесь не используется.",
@@ -301,7 +307,9 @@
         "extras": "Zu den Angeboten"
       },
       "pageTitle": "Fehler",
-      "generalError": "Ein Fehler ist aufgetreten"
+      "generalError": "Ein Fehler ist aufgetreten",
+      "languageSwitchFailedTitle": "Leider ist der Sprachwechsel fehlgeschlagen.",
+      "languageSwitchFailedMessage": "Die ausgewählte Sprache ist nicht offline verfügbar. Eine aktive Internetverbinding ist notwendig."
     },
     "en": {
       "notFound": {
@@ -328,14 +336,14 @@
       },
       "pageTitle": "Error",
       "generalError": "An error occurred",
-      "languageSwitchFailedTitle": "Language switch failed",
-      "languageSwitchFailedMessage": "This language is not available offline, please reconnect and try again."
+      "languageSwitchFailedTitle": "Unfortunately, the app was not able to change the language.",
+      "languageSwitchFailedMessage": "The selected langauge is not available if you are offline. An active internet connection is required."
     },
     "fa": {
       "notFound": {
         "language": "متاسفانه زبان شما در اینجا موجود نیست.",
         "city": "متاسفانه شهر شما پیدا نشد.",
-        "category": "متاسفانه این صفحه پیدا نشد.",
+        "category": "متاسفانه این صفحه پیدا نشد."
       },
       "loadingFailed": "خطایی هنگام بارگیری محتوا رخ داده است.",
       "pageTitle": "خطا",
@@ -343,7 +351,6 @@
       "chooseALanguage": "یک زبان را انتخاب کنید"
     },
     "fr": {
-      "chooseYourLanguage": "Choisis ta Langue:",
       "generalError": "Une erreur s'est produite",
       "notFound": {
         "language": "Malheureusement, ta langue n'est pas disponible ici.",
@@ -535,25 +542,15 @@
     "en": {
       "settings": "Settings",
       "share": "Share",
-      "shareMessage": "Hey, check this out.",
-      "shareFailDefaultMessage": "Something went wrong",
-      "disclaimer": "Disclaimer"
+      "shareMessage": "Just found:",
+      "disclaimer": "Imprint"
     },
     "de": {
-      "settings": "Einstellungen"
-    },
-    "fr": {
-      "settings": "Paramètres"
-    },
-    "ar": {
-      "settings": "إعدادات"
-    },
-    "fa": {
-      "settings": "تنظیمات"
-    },
-    "ru": {
-      "settings": "Настройки сброшены.",
-      "shareFailMessage": "Произошла ошибка."
+      "settings": "Einstellungen",
+      "share": "Teilen",
+      "shareMessage": "Gerade gefunden:",
+      "shareFailDefaultMessage": "Das Teilen des Inhalts ist leider fehlgeschlagen.",
+      "disclaimer": "Impressum"
     }
   },
   "sprungbrett": {
@@ -608,10 +605,12 @@
   },
   "snackbar": {
     "de": {
+      "grantPermission": "Erlauben",
       "deactivateFeature": "Feature deaktivieren"
     },
     "en": {
-      "grantPermission": "Grant permission"
+      "grantPermission": "Allow",
+      "deactivateFeature": "Deactivate feature"
     }
   }
 }
