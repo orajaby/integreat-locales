@@ -562,34 +562,6 @@
       "shareFailMessage": "Произошла ошибка."
     }
   },
-  "launchInquiry": {
-    "en": {
-      "troubleshooting": "Help to improve Integreat",
-      "troubleshootingDescription": "Automatically send crash reports",
-      "allowPushNotifications": "Push News",
-      "allowPushNotificationsDescription": "Receive notifications for the latest local news",
-      "yes": "Yes",
-      "no": "No",
-      "askLater": "Ask later"
-    },
-    "de": {
-      "troubleshooting": "Hilf uns Integreat zu verbessern",
-      "troubleshootingDescription": "Sende automatisch Absturzberichte",
-      "allowPushNotifications": "Push News",
-      "allowPushNotificationsDescription": "Erhalten Sie Benachrichtigungen für die neuesten lokalen News",
-      "yes": "Ja",
-      "no": "Nein",
-      "askLater": "Später fragen"
-    },
-    "fr": {
-    },
-    "ar": {
-    },
-    "fa": {
-    },
-    "ru": {
-    }
-  },
   "sprungbrett": {
     "ar": {
       "noOffersAvailable": "لا توجد عروض"
