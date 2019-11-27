@@ -19,6 +19,7 @@
         "landing": "Ortsauswahl",
         "disclaimer": "Impressum und Kontakt",
         "mainDisclaimer": "Impressum und Kontakt - Integreat",
+        "pois": "Points of Interest",
         "notFound": "Seite nicht gefunden"
       },
       "metaDescription": "Integreat ist Ihr digitaler Guide für Deutschland. Finden Sie lokale Informationen, Events und Beratung. Immer aktuell und in Ihrer Sprache."
@@ -290,7 +291,8 @@
         "city": "Diese Stadt wurde leider nicht gefunden.",
         "category": "Diese Seite wurde leider nicht gefunden.",
         "event": "Dieses Event wurde leider nicht gefunden.",
-        "extra": "Dieses Angebot wurde leider nicht gefunden."
+        "extra": "Dieses Angebot wurde leider nicht gefunden.",
+        "poi": "Dieser Point of Interest wurde leider nicht gefunden."
       },
       "pageNotFound": "Diese Seite wurde leider nicht gefunden.",
       "networkConnectionFailed": "Die Verbindung zum Server ist fehlgeschlagen.",
