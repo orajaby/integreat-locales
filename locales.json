@@ -632,16 +632,27 @@
       "offers": "Angebote",
       "offersDescription": "Jobsuche, Praktikasuche und mehr in der Umgebung",
       "inquiryTitle": "Einstellungen",
-      "sentryTitle": "Absturzberichte senden",
-      "sentryDescription": "Hilf uns, mit automatischen Absturzberichten Integreat zu verbessern",
+      "inquiryIntro": "Durch Klicken auf \"{acceptAll}\" erlaube ich der Integreat-App",
+      "sentryTitle": "App-Stabilität verbessern",
+      "sentryCondition": "... mir mithilfe meines GPS-Standorts nahegelegene Orte vorzuschlagen",
       "pushNewsTitle": "Push News",
-      "pushNewsDescription": "Erhalten Sie Benachrichtigungen für die neuesten lokalen News",
+      "pushNewsCondition": "... mir Push News über die neuesten lokalen News zu senden",
       "locationTitle": "Orte vorschlagen",
-      "locationDescription": "Standortzugriff aktivieren um nahegelegene Orte vorschlagen zu lassen",
+      "locationCondition": "... mit dem automatischen Senden von Absturzberichten Integreat zu verbessern",
       "skip": "Überspringen",
       "next": "Weiter",
       "continue": "Weiter",
-      "acceptAll": "Alle Akzeptieren"
+      "customize": "Anpassen",
+      "declineAll": "Alles Ablehnen",
+      "acceptAll": "Alles Akzeptieren"
+    }
+  },
+  "snackbar": {
+    "de": {
+      "deactivateFeature": "Feature deaktivieren"
+    },
+    "en": {
+      "grantPermission": "Grant permission"
     }
   }
 }
