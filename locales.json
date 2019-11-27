@@ -221,17 +221,11 @@
     }
   },
   "extras": {
-    "ar": {
-    },
     "en": {
       "offers": "Offers"
     },
     "de": {
       "offers": "Angebote"
-    },
-    "fa": {
-    },
-    "fr": {
     }
   },
   "landing": {
