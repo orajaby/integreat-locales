@@ -4,7 +4,6 @@
       "pageTitles": {
         "search": "البحث",
         "events": "الأخبار",
-        "extras": "إضافات",
         "landing": "أين أنت؟",
         "disclaimer": "هيئة التحرير وجهة الاتصال",
         "mainDisclaimer": "Integreat - هيئة التحرير وجهة الاتصال",
@@ -16,7 +15,7 @@
       "pageTitles": {
         "search": "Suche",
         "events": "Veranstaltungen",
-        "extras": "Extras",
+        "extras": "Angebote",
         "landing": "Ortsauswahl",
         "disclaimer": "Impressum und Kontakt",
         "mainDisclaimer": "Impressum und Kontakt - Integreat",
@@ -28,7 +27,7 @@
       "pageTitles": {
         "search": "Search",
         "events": "Events",
-        "extras": "Extras",
+        "extras": "Offers",
         "landing": "Location selection",
         "disclaimer": "Imprint and contact",
         "mainDisclaimer": "Imprint and Contact - Integreat",
@@ -41,7 +40,6 @@
       "pageTitles": {
         "search": "جستجو",
         "events": "تازه​ها",
-        "extras": "اضافات",
         "disclaimer": "مجوز ‎و اطلاعات تماس",
         "mainDisclaimer": "Integreat - مجوز \u200Eو اطلاعات تماس",
         "notFound": "صفحه پیدا نشد"
@@ -52,7 +50,6 @@
       "pageTitles": {
         "search": "Rechercher",
         "events": "Actualités",
-        "extras": "Extras",
         "disclaimer": "Mentions légales et contact",
         "mainDisclaimer": "Mentions Légales - Integreat",
         "notFound": "Page introuvable"
@@ -280,8 +277,7 @@
         "language": "للأسف، لغتك ليست متاحة.",
         "city": "للأسف، لم يتم العثور على مدينتك.",
         "category": "لا يوجد سجَّلات جديدة",
-        "event": "للأسف، لم يتم العثور على هذا الحدث.",
-        "extra": "للأسف، لم يتم العثور على هذه الإضافة."
+        "event": "للأسف، لم يتم العثور على هذا الحدث."
       },
       "loadingFailed": "لقد حصل خطأ خلال تحميل الملفات",
       "pageTitle": "خطأ",
@@ -294,7 +290,7 @@
         "city": "Diese Stadt wurde leider nicht gefunden.",
         "category": "Diese Seite wurde leider nicht gefunden.",
         "event": "Dieses Event wurde leider nicht gefunden.",
-        "extra": "Dieses Extra wurde leider nicht gefunden."
+        "extra": "Dieses Angebot wurde leider nicht gefunden."
       },
       "pageNotFound": "Diese Seite wurde leider nicht gefunden.",
       "networkConnectionFailed": "Die Verbindung zum Server ist fehlgeschlagen.",
@@ -308,7 +304,7 @@
         "start": "Zur Startseite",
         "categories": "Zu den Kategorien",
         "events": "Zu den Veranstaltungen",
-        "extras": "Zu den Extras"
+        "extras": "Zu den Angeboten"
       },
       "pageTitle": "Fehler",
       "generalError": "Ein Fehler ist aufgetreten"
@@ -319,7 +315,7 @@
         "city": "Sorry, but this city could not be found.",
         "category": "Sorry, but the requested page could not be found.",
         "event": "Sorry, but this event could not be found.",
-        "extra": "Sorry, but this extra could not be found.",
+        "extra": "Sorry, but this offer could not be found.",
         "poi": "Sorry, but this Point of Interest could not be found."
       },
       "pageNotFound": "This page could not be found.",
@@ -334,7 +330,7 @@
         "start": "Go to Start",
         "categories": "Go to Categories",
         "events": "Go to events",
-        "extras": "Go to Extras"
+        "extras": "Go to Offers"
       },
       "pageTitle": "Error",
       "generalError": "An error occurred",
@@ -346,7 +342,6 @@
         "language": "متاسفانه زبان شما در اینجا موجود نیست.",
         "city": "متاسفانه شهر شما پیدا نشد.",
         "category": "متاسفانه این صفحه پیدا نشد.",
-        "extra": "متاسفانه این اضافه، پیدا نشد."
       },
       "loadingFailed": "خطایی هنگام بارگیری محتوا رخ داده است.",
       "pageTitle": "خطا",
@@ -359,8 +354,7 @@
       "notFound": {
         "language": "Malheureusement, ta langue n'est pas disponible ici.",
         "city": "Malheureusement, ta ville est introuvable.",
-        "category": "Malheureusement, cette page est introuvable.",
-        "extra": "Malheureusement, cet extra est introuvable."
+        "category": "Malheureusement, cette page est introuvable."
       },
       "loadingFailed": "Malheureusement, la page n'a pas pu être chargée.",
       "chooseALanguage": "Choisis ta Langue:"
@@ -402,7 +396,6 @@
     "ar": {
       "technicalTopics": "وظائف تقنية",
       "contentOfCity": "محتويات",
-      "extra": "إضافي",
       "disclaimer": "هيئة التحرير وجهة الاتصال",
       "searchFor": "البحث عن",
       "contentOfPage": "محتوى الصفحة",
@@ -422,7 +415,7 @@
     "de": {
       "technicalTopics": "Technische Funktionen",
       "contentOfCity": "Inhalte von {{city}}",
-      "contentOfExtra": "Extra \"{{extra}}\"",
+      "contentOfExtra": "Angebot \"{{extra}}\"",
       "disclaimer": "Kontakt und Impressum",
       "searchFor": "Suche nach",
       "contentOfPage": "Inhalt der Seite \"{{page}}\"",
