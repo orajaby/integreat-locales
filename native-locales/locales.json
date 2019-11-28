@@ -1,8 +1,7 @@
 {
     "native": {
-        "en": {
-            "NSPhotoLibraryAddUsageDescription": "Integreat wants to save photos to your library",
-            "NSLocationWhenInUseUsageDescription": "Integreat needs permission to use your location to show nearby places."
+        "de": {
+            "NSPhotoLibraryAddUsageDescription": "Um Bilder zu speichern, benötigt Integreat Zugriff auf die Galerie."
         }
     }
 }
