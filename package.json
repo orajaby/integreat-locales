@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "commander": "^4.0.1",
     "lodash": "^4.17.15"
   },
   "engines": {
