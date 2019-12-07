@@ -1,0 +1,95 @@
+#!/usr/bin/node
+
+const program = require('commander')
+const fs = require('fs')
+const path = require('path')
+const flat = require('flat')
+
+const {reduce, map, union, isString, merge, fromPairs, toPairs, sortBy, mapValues, isPlainObject} = require('lodash')
+
+function parseFormat (value) {
+  if (!['csv', 'json'].includes(value)) {
+    throw new Error('Format must be xml or json')
+  }
+  return value
+}
+
+program
+  .version('0.1.0')
+  .option('-d, --debug', 'enable extreme logging')
+  .option('-c, --config <config_file>', 'set configuration for managing translations', 'config.json')
+
+program
+  .command('check <locales_file>')
+  .action(function (localesFile, options) {
+    console.log(localesFile)
+  })
+
+const getModulesByLanguage = (keyModuleArray, language) => {
+  return keyModuleArray.map(([moduleKey, module]) => [moduleKey, (module[language] || {})])
+}
+
+function flatten (xs, childSelector) {
+  return xs.reduce((acc, x) => {
+    acc = acc.concat(x)
+    let children = childSelector(x)
+    if (children) {
+      acc = acc.concat(flatten(children, childSelector))
+    }
+    return acc
+  }, [])
+}
+
+const mapStringValuesDeep = (obj, fn) =>
+  mapValues(obj, (val, key) =>
+    !isString(val)
+      ? mapStringValuesDeep(val, fn)
+      : fn(val, key, obj)
+  )
+
+const flattenModules = (modules) => {
+  return flat(modules)
+}
+
+program
+  .command('convert <locales_file> <format>')
+  .action(function (locales, format, options) {
+    const {targetLanguages, sourceLanguage} = JSON.parse(fs.readFileSync(program.config, 'utf8'))
+
+    if (path.extname(locales) === '.json') {
+      const json = JSON.parse(fs.readFileSync(locales, 'utf8'))
+
+      const keyModuleArray = sortBy(toPairs(json), ([moduleKey, module]) => moduleKey)
+
+      const skeleton = getModulesByLanguage(keyModuleArray, sourceLanguage)
+        .map(([moduleKey, module]) => [
+          moduleKey,
+          mapStringValuesDeep(module, translation => '')
+        ])
+
+      const perLanguageModules = fromPairs(
+        targetLanguages.map(targetLanguage =>
+          [targetLanguage, getModulesByLanguage(keyModuleArray, targetLanguage)]
+        ))
+
+      const filledPerLangaugeLocales =  mapValues(perLanguageModules, (modules) => merge({}, skeleton, modules)) // TODO: merge is not working yet
+
+      const flattenPerLanguageLocales = mapValues(filledPerLangaugeLocales, (modules) => flattenModules(fromPairs(modules)))
+
+      const stringify = require('csv-stringify')
+      const assert = require('assert')
+
+      stringify(flattenPerLanguageLocales['de'], function(err, output){
+        assert.equal(output, '1,2,3,4\na,b,c,d\n')
+      }).pipe(process.stdout)
+
+      console.log()
+    } else {
+      throw new Error('nyi')
+    }
+  })
+
+program.parse(process.argv)
+
+console.log(program.opts())
+console.log(program.config)

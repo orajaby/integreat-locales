@@ -13,10 +13,14 @@ function findMissingLocales () {
 
   const missingKeys = reduce(locales, (moduleAcc, languages, moduleKey) => {
     const missingKeysInModule = reduce(languages, (languageAcc, languageKeys, languageKey) => {
+
+      
       const missingKeysInLanguage = keys[moduleKey].filter(key => !languageKeys[key])
       if (!isEmpty(missingKeysInLanguage)) {
         languageAcc[languageKey] = missingKeysInLanguage
       }
+
+
       return languageAcc
     }, {})
 
