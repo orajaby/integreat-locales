@@ -4,8 +4,9 @@ const program = require('commander')
 const fs = require('fs')
 const path = require('path')
 const flat = require('flat')
+const stringify = require('csv-stringify')
 
-const {reduce, map, union, isString, merge, fromPairs, toPairs, sortBy, mapValues, isPlainObject} = require('lodash')
+const {reduce, map, isEmpty, union, isString, merge, fromPairs, toPairs, zip, sortBy, mapValues, isPlainObject} = require('lodash')
 
 function parseFormat (value) {
   if (!['csv', 'json'].includes(value)) {
@@ -62,26 +63,34 @@ program
       const keyModuleArray = sortBy(toPairs(json), ([moduleKey, module]) => moduleKey)
 
       const skeleton = getModulesByLanguage(keyModuleArray, sourceLanguage)
-        .map(([moduleKey, module]) => [
-          moduleKey,
-          mapStringValuesDeep(module, translation => '')
-        ])
+        .map(([moduleKey, module]) => {
+
+          if (isEmpty(module)) {
+            throw new Error("Module in sourceLanguage mustn't be empty!")
+          }
+
+          return [
+            moduleKey,
+            mapStringValuesDeep(module, translation => '')
+          ]
+        })
 
       const perLanguageModules = fromPairs(
         targetLanguages.map(targetLanguage =>
           [targetLanguage, getModulesByLanguage(keyModuleArray, targetLanguage)]
         ))
 
-      const filledPerLangaugeLocales =  mapValues(perLanguageModules, (modules) => merge({}, skeleton, modules)) // TODO: merge is not working yet
+      const filledPerLangaugeLocales =  mapValues(perLanguageModules, (modules) => {
+        return zip(skeleton, modules).map(([[skModuleKey, skModule], [moduleKey, module]]) => ([moduleKey, merge({}, skModule, module)]))
+      })
 
       const flattenPerLanguageLocales = mapValues(filledPerLangaugeLocales, (modules) => flattenModules(fromPairs(modules)))
 
-      const stringify = require('csv-stringify')
-      const assert = require('assert')
 
-      stringify(flattenPerLanguageLocales['de'], function(err, output){
-        assert.equal(output, '1,2,3,4\na,b,c,d\n')
-      }).pipe(process.stdout)
+      var output = fs.createWriteStream("ar.csv");
+      stringify(toPairs(flattenPerLanguageLocales['ar']), function(err, output){
+        console.log(err)
+      }).pipe(output)
 
       console.log()
     } else {
