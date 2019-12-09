@@ -569,13 +569,6 @@
       "noOffersAvailable": "Aucune offre disponible"
     }
   },
-  "pois": {
-    "en": {
-      "location": "Location",
-      "noPois": "No Points of Interest available",
-      "pois": "Points of Interest"
-    }
-  },
   "intro": {
     "de": {
       "search": "Suche",
