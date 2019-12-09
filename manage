@@ -52,6 +52,22 @@ const flattenModules = (modules) => {
   return flat(modules)
 }
 
+const writePairs = (pairs, name) => {
+  const output = fs.createWriteStream(`csv/${name}.csv`)
+
+  output.on('close', () => {
+    console.log(`Successfully written ${name}.csv.`)
+  })
+
+  output.on('error', () => {
+    console.log(`Failed to write ${name}.csv.`)
+  })
+
+  stringify(
+    pairs
+  ).pipe(output)
+}
+
 program
   .command('convert <locales_file> <format>')
   .action(function (locales, format, options) {
@@ -66,7 +82,7 @@ program
         .map(([moduleKey, module]) => {
 
           if (isEmpty(module)) {
-            throw new Error("Module in sourceLanguage mustn't be empty!")
+            throw new Error(`Module ${moduleKey} is missing in source language!`)
           }
 
           return [
@@ -80,25 +96,17 @@ program
           [targetLanguage, getModulesByLanguage(keyModuleArray, targetLanguage)]
         ))
 
-      const filledPerLangaugeLocales =  mapValues(perLanguageModules, (modules) => {
+      const filledPerLangaugeLocales = mapValues(perLanguageModules, (modules) => {
         return zip(skeleton, modules).map(([[skModuleKey, skModule], [moduleKey, module]]) => ([moduleKey, merge({}, skModule, module)]))
       })
 
       const flattenPerLanguageLocales = mapValues(filledPerLangaugeLocales, (modules) => flattenModules(fromPairs(modules)))
 
+      Object.entries(flattenPerLanguageLocales).forEach(([languageKey, modules]) => writePairs(toPairs(modules).map(([key, string]) => ([key, string.replace(/[\u200E]/g, '\\u200E')])), languageKey))
 
-      var output = fs.createWriteStream("ar.csv");
-      stringify(toPairs(flattenPerLanguageLocales['ar']), function(err, output){
-        console.log(err)
-      }).pipe(output)
-
-      console.log()
     } else {
       throw new Error('nyi')
     }
   })
 
 program.parse(process.argv)
-
-console.log(program.opts())
-console.log(program.config)
