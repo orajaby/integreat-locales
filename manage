@@ -45,7 +45,10 @@ const writePairs = (sourceLanguagePairs, pairs, name) => {
     .map(([[sourceKey, sourceTranslation], [key, translation]]) => [key, sourceTranslation, translation])
 
   stringify(
-    withSourceLanguagePairs
+    [
+      ['key', 'source_language', 'target_language'],
+      ...withSourceLanguagePairs
+    ]
   ).pipe(output)
 }
 
