@@ -4,15 +4,9 @@ const program = require('commander')
 const fs = require('fs')
 const path = require('path')
 const flat = require('flat')
+const stringify = require('csv-stringify')
 
-const {reduce, map, union, isString, merge, fromPairs, toPairs, sortBy, mapValues, isPlainObject} = require('lodash')
-
-function parseFormat (value) {
-  if (!['csv', 'json'].includes(value)) {
-    throw new Error('Format must be xml or json')
-  }
-  return value
-}
+const {isEmpty, without, isString, merge, fromPairs, toPairs, zip, sortBy, mapValues} = require('lodash')
 
 program
   .version('0.1.0')
@@ -25,21 +19,6 @@ program
     console.log(localesFile)
   })
 
-const getModulesByLanguage = (keyModuleArray, language) => {
-  return keyModuleArray.map(([moduleKey, module]) => [moduleKey, (module[language] || {})])
-}
-
-function flatten (xs, childSelector) {
-  return xs.reduce((acc, x) => {
-    acc = acc.concat(x)
-    let children = childSelector(x)
-    if (children) {
-      acc = acc.concat(flatten(children, childSelector))
-    }
-    return acc
-  }, [])
-}
-
 const mapStringValuesDeep = (obj, fn) =>
   mapValues(obj, (val, key) =>
     !isString(val)
@@ -51,45 +30,114 @@ const flattenModules = (modules) => {
   return flat(modules)
 }
 
+const writePairs = (sourceLanguagePairs, pairs, name) => {
+  const output = fs.createWriteStream(`csv/${name}.csv`)
+
+  output.on('close', () => {
+    console.log(`Successfully written ${name}.csv.`)
+  })
+
+  output.on('error', () => {
+    console.log(`Failed to write ${name}.csv.`)
+  })
+
+  const withSourceLanguagePairs = zip(sourceLanguagePairs, pairs)
+    .map(([[sourceKey, sourceTranslation], [key, translation]]) => [key, sourceTranslation, translation])
+
+  stringify(
+    [
+      ['key', 'source_language', 'target_language'],
+      ...withSourceLanguagePairs
+    ]
+  ).pipe(output)
+}
+
+const EMPTY_MODULE = {}
+
+/**
+ * Create a a translation skeleton which has all keys set to an empty string
+ *
+ * @param language The language which serves as the skeleton
+ * @param moduleArray The array of modules (containing all languages) with its keys
+ * @returns {*}
+ */
+const createSkeleton = (language, moduleArray) => {
+  return getModulesByLanguage(moduleArray, language)
+    .map(([moduleKey, module]) => {
+
+      if (module === EMPTY_MODULE) {
+        throw new Error(`Module ${moduleKey} is missing in source language!`)
+      }
+
+      return [
+        moduleKey,
+        mapStringValuesDeep(module, translation => '')
+      ]
+    })
+}
+
+const getModulesByLanguage = (keyModuleArray, language) => {
+  return keyModuleArray.map(([moduleKey, module]) => [moduleKey, (module[language] || EMPTY_MODULE)])
+}
+
+const mergeByLanguageModule = (byLanguageModule, skeleton, sourceLanguage) => {
+  return zip(skeleton, byLanguageModule)
+    .map(([[skModuleKey, skModule], [moduleKey, module]]) => {
+
+      const diff = without(Object.keys(flat(module)), ...Object.keys(flat(skModule)))
+      if (!isEmpty(diff)) {
+        throw new Error(`The keys [${diff}] are missing in module ${moduleKey} 
+                        (with the  source language ${sourceLanguage})!`)
+      }
+
+      return ([moduleKey, merge({}, skModule, module)])
+    })
+}
+
+const writeCsvFromJson = (json, sourceLanguage, targetLanguages) => {
+  const moduleArray = sortBy(toPairs(json), ([moduleKey, module]) => moduleKey)
+  const byLanguageModuleArray = fromPairs(
+    targetLanguages.map(targetLanguage => [targetLanguage, getModulesByLanguage(moduleArray, targetLanguage)])
+  )
+
+  const skeleton = createSkeleton(sourceLanguage, moduleArray)
+
+  const filledByLanguageModuleArray = mapValues(
+    byLanguageModuleArray,
+    (byLanguageModule) => {
+      return mergeByLanguageModule(byLanguageModule, skeleton, sourceLanguage)
+    }
+  )
+
+  const flattenByLanguageModuleArray = mapValues(
+    filledByLanguageModuleArray,
+    (modules) => flattenModules(fromPairs(modules))
+  )
+
+  const flattenSourceLanguageModuleArray = flattenModules(fromPairs(getModulesByLanguage(moduleArray, sourceLanguage)))
+
+  Object.entries(flattenByLanguageModuleArray)
+    .forEach(([languageKey, modules]) =>
+      writePairs(toPairs(flattenSourceLanguageModuleArray), toPairs(modules), languageKey))
+
+  console.log(`Keys in source language ${sourceLanguage}: ${Object.keys(flattenSourceLanguageModuleArray).length}`)
+}
+
 program
   .command('convert <locales_file> <format>')
   .action(function (locales, format, options) {
     const {targetLanguages, sourceLanguage} = JSON.parse(fs.readFileSync(program.config, 'utf8'))
 
+    if (format !== 'csv') {
+      throw new Error('nyi')
+    }
+
     if (path.extname(locales) === '.json') {
       const json = JSON.parse(fs.readFileSync(locales, 'utf8'))
-
-      const keyModuleArray = sortBy(toPairs(json), ([moduleKey, module]) => moduleKey)
-
-      const skeleton = getModulesByLanguage(keyModuleArray, sourceLanguage)
-        .map(([moduleKey, module]) => [
-          moduleKey,
-          mapStringValuesDeep(module, translation => '')
-        ])
-
-      const perLanguageModules = fromPairs(
-        targetLanguages.map(targetLanguage =>
-          [targetLanguage, getModulesByLanguage(keyModuleArray, targetLanguage)]
-        ))
-
-      const filledPerLangaugeLocales =  mapValues(perLanguageModules, (modules) => merge({}, skeleton, modules)) // TODO: merge is not working yet
-
-      const flattenPerLanguageLocales = mapValues(filledPerLangaugeLocales, (modules) => flattenModules(fromPairs(modules)))
-
-      const stringify = require('csv-stringify')
-      const assert = require('assert')
-
-      stringify(flattenPerLanguageLocales['de'], function(err, output){
-        assert.equal(output, '1,2,3,4\na,b,c,d\n')
-      }).pipe(process.stdout)
-
-      console.log()
+      writeCsvFromJson(json, sourceLanguage, targetLanguages)
     } else {
       throw new Error('nyi')
     }
   })
 
 program.parse(process.argv)
-
-console.log(program.opts())
-console.log(program.config)

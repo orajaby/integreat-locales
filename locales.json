@@ -33,7 +33,7 @@
         "disclaimer": "Imprint and contact",
         "mainDisclaimer": "Imprint and Contact - Integreat",
         "pois": "Points of Interest",
-        "notFound": "Fehler"
+        "notFound": "Seite konnte nicht gefunden werden."
       },
       "metaDescription": "Integreat is your digital guide to life in Germany. Discover local information, events and counselling. Always up to date and available in your language."
     },
@@ -567,13 +567,6 @@
     },
     "fr": {
       "noOffersAvailable": "Aucune offre disponible"
-    }
-  },
-  "pois": {
-    "en": {
-      "location": "Location",
-      "noPois": "No Points of Interest available",
-      "pois": "Points of Interest"
     }
   },
   "intro": {
