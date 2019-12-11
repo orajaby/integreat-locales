@@ -578,6 +578,8 @@
   },
   "intro": {
     "de": {
+      "integreat": "Integreat",
+      "integreatDescription": "Ihr digitaler Guide für Deutschland",
       "search": "Suche",
       "searchDescription": "Anhand von Schlagwörtern schnell die richtige Information finden",
       "languageChange": "Sprachwechsel",
@@ -588,11 +590,8 @@
       "offersDescription": "Jobsuche, Praktikasuche und mehr in der Umgebung",
       "inquiryTitle": "Einstellungen",
       "inquiryIntro": "Durch Klicken auf \"{{accept}}\" erlaube ich der Integreat-App, ...",
-      "sentryTitle": "App-Stabilität",
       "sentryCondition": "... mit dem automatischen Senden von Absturzberichten Integreat zu verbessern",
-      "pushNewsTitle": "Push-Benachrichtigungen",
       "pushNewsCondition": "... mir Push-Benachrichtigungen zu den neuesten lokalen News zu senden",
-      "proposeCitiesTitle": "Nahegelegene Orte",
       "proposeCitiesCondition": "... mir mithilfe meines GPS-Standortes nahegelegene Orte vorzuschlagen",
       "skip": "Überspringen",
       "next": "Weiter",
