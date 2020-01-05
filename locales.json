@@ -598,12 +598,10 @@
   },
   "snackbar": {
     "de": {
-      "grantPermission": "Erlauben",
-      "deactivateFeature": "Feature deaktivieren"
-    },
-    "en": {
-      "grantPermission": "Allow",
-      "deactivateFeature": "Deactivate feature"
+      "locationPermissionMissing": "Standortzugriff zum Vorschlagen von nahegelegenen Orten erforderlich",
+      "pushNotificationPermissionMissing": "Berechtigungen zum Senden von Push-Benachrichtigungen erforderlich",
+      "grant": "ERLAUBEN",
+      "deactivate": "DEAKTIVIEREN"
     }
   }
 }
