@@ -244,7 +244,12 @@
       "nearbyPlaces": "Orte in der Nähe",
       "noNearbyPlaces": "Keine Orte in der Nähe gefunden.",
       "alert": "Hinweis",
-      "locationError": "Um Orte in der Nähe anzeigen zu können, müssen Ortungsdienste aktiviert werden."
+      "locationError": "Um Orte in der Nähe anzeigen zu können, müssen Ortungsdienste aktiviert werden.",
+      "noPermission": "Standortzugriff erforderlich",
+      "loading": "Suche Standort...",
+      "notAvailable": "Standortbestimmung ausgeschaltet",
+      "timeout": "Standortbestimmung fehlgeschlagen",
+      "tryAgain": "Wiederholen"
     },
     "en": {
       "searchCity": "Search for a city",
