@@ -9,7 +9,11 @@
         "disclaimer": "Impressum und Kontakt",
         "mainDisclaimer": "Impressum und Kontakt - Integreat",
         "pois": "Points of Interest",
-        "notFound": "Seite nicht gefunden"
+        "notFound": "Seite nicht gefunden",
+        "noPermission": "Standortzugriff erforderlich",
+        "loading": "Suche Standort...",
+        "notAvailable": "Standortbestimmung nicht aktiv",
+        "timeout": "Standortbestimmung fehlgeschlagen"
       },
       "metaDescription": "Integreat ist Ihr digitaler Guide für Deutschland. Finden Sie lokale Informationen, Events und Beratung. Immer aktuell und in Ihrer Sprache."
     },
@@ -2242,7 +2246,11 @@
   "snackbar": {
     "de": {
       "grantPermission": "Erlauben",
-      "deactivateFeature": "Feature deaktivieren"
+      "deactivateFeature": "Feature deaktivieren",
+      "locationPermissionMissing": "Standortzugriff zum Vorschlagen von nahegelegenen Orten erforderlich",
+      "pushNotificationPermissionMissing": "Berechtigungen zum Senden von Push-Benachrichtigungen erforderlich",
+      "grant": "ERLAUBEN",
+      "deactivate": "DEAKTIVIEREN"
     },
     "ar": {
       "grantPermission": "السماح",
