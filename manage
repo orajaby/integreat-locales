@@ -15,12 +15,6 @@ program
   .option('-d, --debug', 'enable extreme logging')
   .option('-c, --config <config_file>', 'set configuration for managing translations', 'config.json')
 
-program
-  .command('check <locales_file>')
-  .action(function (localesFile, options) {
-    console.log(localesFile)
-  })
-
 const mapStringValuesDeep = (obj, fn) =>
   mapValues(obj, (val, key) =>
     !isString(val)
@@ -32,8 +26,8 @@ const flattenModules = (modules) => {
   return flat(modules)
 }
 
-const writePairs = (sourceLanguagePairs, pairs, name) => {
-  const output = fs.createWriteStream(`csv/${name}.csv`)
+const writePairs = (toPath, sourceLanguagePairs, pairs, name) => {
+  const output = fs.createWriteStream(`${toPath}/${name}.csv`)
 
   output.on('close', () => {
     console.log(`Successfully written ${name}.csv.`)
@@ -96,7 +90,7 @@ const mergeByLanguageModule = (byLanguageModule, skeleton, sourceLanguage) => {
     })
 }
 
-const writeCsvFromJson = (json, sourceLanguage, targetLanguages) => {
+const writeCsvFromJson = (json, toPath, sourceLanguage, targetLanguages) => {
   const moduleArray = sortBy(toPairs(json), ([moduleKey, module]) => moduleKey) // Sort by module key
   const byLanguageModuleArray = fromPairs(
     targetLanguages.map(targetLanguage => [targetLanguage, getModulesByLanguage(moduleArray, targetLanguage)])
@@ -120,7 +114,7 @@ const writeCsvFromJson = (json, sourceLanguage, targetLanguages) => {
 
   Object.entries(flattenByLanguage)
     .forEach(([languageKey, modules]) =>
-      writePairs(toPairs(flattenSourceLanguage), toPairs(modules), languageKey))
+      writePairs(toPath, toPairs(flattenSourceLanguage), toPairs(modules), languageKey))
 
   console.log(`Keys in source language ${sourceLanguage}: ${Object.keys(flattenSourceLanguage).length}`)
 }
@@ -137,7 +131,7 @@ const loadModules = (csvFile, csvColumn) => {
   return unflatten(flattened)
 }
 
-const writeJsonFromCsv = (locales, sourceLanguage) => {
+const writeJsonFromCsv = (locales, toPath, sourceLanguage) => {
   fs.readdir(locales, (err, files) => {
     if (err) {
       throw err
@@ -164,7 +158,7 @@ const writeJsonFromCsv = (locales, sourceLanguage) => {
         byLanguageModulesWithSourceLanguage[languageKey][moduleKey]]))])
     )
 
-    fs.writeFileSync('locales.json', JSON.stringify(json, null, 2), 'utf-8')
+    fs.writeFileSync(toPath, JSON.stringify(json, null, 2), 'utf-8')
 
     const logMessages = Object.entries(json).map(([moduleKey, module]) => `Languages is module ${moduleKey}: ${Object.keys(module).length}`)
 
@@ -173,19 +167,21 @@ const writeJsonFromCsv = (locales, sourceLanguage) => {
 }
 
 program
-  .command('convert <locales_file> <format>')
-  .action(function (locales, format, options) {
+  .command('convert <locales_file> <toPath> <format>')
+  .action(function (fromPath, toPath, targetFormat, options) {
     const {targetLanguages, sourceLanguage} = JSON.parse(fs.readFileSync(program.config, 'utf8'))
 
-    if (format === 'csv') {
-      if (path.extname(locales) === '.json') {
-        const json = JSON.parse(fs.readFileSync(locales, 'utf8'))
-        writeCsvFromJson(json, sourceLanguage, targetLanguages)
+    if (targetFormat === 'csv') {
+      if (path.extname(fromPath) === '.json') {
+        const json = JSON.parse(fs.readFileSync(fromPath, 'utf8'))
+        writeCsvFromJson(json, toPath, sourceLanguage, targetLanguages)
       } else {
         throw new Error('nyi')
       }
-    } else if (format === 'json') {
-      writeJsonFromCsv(locales, sourceLanguage)
+    } else if (targetFormat === 'json') {
+      writeJsonFromCsv(fromPath, toPath, sourceLanguage)
+    } else {
+      throw new Error('nyi')
     }
   })
 
