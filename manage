@@ -46,13 +46,12 @@ const writePairs = (sourceLanguagePairs, pairs, name) => {
   const withSourceLanguagePairs = zip(sourceLanguagePairs, pairs)
     .map(([[sourceKey, sourceTranslation], [key, translation]]) => [key, sourceTranslation, translation])
 
-  // TODO
-  // stringify(
-  //   [
-  //     ['key', 'source_language', 'target_language'],
-  //     ...withSourceLanguagePairs
-  //   ]
-  // ).pipe(output)
+  stringify(
+    [
+      ['key', 'source_language', 'target_language'],
+      ...withSourceLanguagePairs
+    ]
+  ).pipe(output)
 }
 
 const EMPTY_MODULE = {}
@@ -135,9 +134,42 @@ const loadModules = (csvFile, csvColumn) => {
 
   const flattened = fromPairs(records.map(record => [record['key'], record[csvColumn]]))
 
-  const unflattened = unflatten(flattened)
+  return unflatten(flattened)
+}
 
-  return unflattened
+const writeJsonFromCsv = (locales, sourceLanguage) => {
+  fs.readdir(locales, (err, files) => {
+    if (err) {
+      throw err
+    }
+
+    const csvs = files.map(file => `${locales}/${file}`).filter(file => path.extname(file) === '.csv')
+    const byLanguageModules = fromPairs(csvs.map(csvFile => [path.basename(csvFile, '.csv'), loadModules(csvFile, 'target_language')]))
+
+    if (!csvs) {
+      throw  new Error('A minimum of one CSV is required in order to build a JSON!')
+    }
+
+    const sourceModules = loadModules(csvs[0], 'source_language')
+
+    const byLanguageModulesWithSourceLanguage = {...byLanguageModules, [sourceLanguage]: sourceModules}
+
+    const languageKeys = [sourceLanguage, ...Object.keys(byLanguageModules).sort()] // Sort by language key, but sourceLanguage should be first
+    const moduleKeys = Object.keys(sourceModules).sort() // Sort by module key
+
+    const json = fromPairs(moduleKeys.map(moduleKey => [
+      moduleKey,
+      fromPairs(languageKeys.map(languageKey => [
+        languageKey,
+        byLanguageModulesWithSourceLanguage[languageKey][moduleKey]]))])
+    )
+
+    fs.writeFileSync('locales.json', JSON.stringify(json, null, 2), 'utf-8')
+
+    const logMessages = Object.entries(json).map(([moduleKey, module]) => `Languages is module ${moduleKey}: ${Object.keys(module).length}`)
+
+    logMessages.forEach(message => console.log(message))
+  })
 }
 
 program
@@ -153,39 +185,7 @@ program
         throw new Error('nyi')
       }
     } else if (format === 'json') {
-      fs.readdir(locales, (err, files) => {
-        if (err) {
-          throw err
-        }
-
-        const csvs = files.map(file => `${locales}/${file}`).filter(file => path.extname(file) === '.csv')
-        const byLanguageModules = fromPairs(csvs.map(csvFile => [path.basename(csvFile, '.csv'), loadModules(csvFile, 'target_language')]))
-
-        if (!csvs) {
-          throw  new Error('A minimum of one CSV is required in order to build a JSON!')
-        }
-
-        const sourceModules = loadModules(csvs[0], 'source_language')
-
-        const byLanguageModulesWithSourceLanguage = {...byLanguageModules, [sourceLanguage]: sourceModules}
-
-        const languageKeys = [sourceLanguage, ...Object.keys(byLanguageModules).sort()] // Sort by language key, but sourceLanguage should be first
-        const moduleKeys = Object.keys(sourceModules).sort() // Sort by module key
-
-        const json = fromPairs(moduleKeys.map(moduleKey => [
-          moduleKey,
-          fromPairs(languageKeys.map(languageKey => [
-            languageKey,
-            byLanguageModulesWithSourceLanguage[languageKey][moduleKey]]))])
-        )
-
-        fs.writeFileSync('locales.json', JSON.stringify(json, null, 2), 'utf-8')
-
-        const logMessages = Object.entries(json).map(([moduleKey, module]) => `Languages is module ${moduleKey}: ${Object.keys(module).length}`)
-
-        logMessages.forEach(message => console.log(message))
-
-      })
+      writeJsonFromCsv(locales, sourceLanguage)
     }
   })
 
