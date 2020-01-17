@@ -2249,8 +2249,7 @@
       "deactivateFeature": "Feature deaktivieren",
       "locationPermissionMissing": "Standortzugriff zum Vorschlagen von nahegelegenen Orten erforderlich",
       "pushNotificationPermissionMissing": "Berechtigungen zum Senden von Push-Benachrichtigungen erforderlich",
-      "grant": "ERLAUBEN",
-      "deactivate": "DEAKTIVIEREN"
+      "deactivate": "Deaktivieren"
     },
     "ar": {
       "grantPermission": "السماح",
