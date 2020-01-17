@@ -1381,6 +1381,8 @@
   },
   "intro": {
     "de": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat ist Ihr digitaler Guide für Deutschland",
       "search": "Suche",
       "searchDescription": "Anhand von Schlagwörtern schnell die richtige Information finden",
       "languageChange": "Sprachwechsel",
@@ -1407,6 +1409,8 @@
       "privacyPolicy": "Datenschutzerklärung"
     },
     "ar": {
+      "integreat": "Integreat",
+      "integreatDescription": "تطبيق إنتجريت هو دليلك الرقمي لألمانيا",
       "search": "البحث",
       "searchDescription": "استخدام الكلمات الرئيسية للعثور بسرعة على المعلومات الصحيحة",
       "languageChange": "تغيير اللغة",
@@ -1433,6 +1437,8 @@
       "privacyPolicy": "بيان الخصوصية"
     },
     "en": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat is your digital guide to life in Germany",
       "search": "Search",
       "searchDescription": "Find the right information based on keywords",
       "languageChange": "Changing the language",
@@ -1459,6 +1465,8 @@
       "privacyPolicy": "Data protection policy"
     },
     "es": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat es su guía digital para Alemania",
       "search": "Buscar",
       "searchDescription": "Encuentre rápidamente la información correcta utilizando palabras clave",
       "languageChange": "Cambio de idioma",
@@ -1485,6 +1493,8 @@
       "privacyPolicy": "Declaración de privacidad"
     },
     "fa": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat\u200F راهنمای دیجیتالی شما در مورد آلمان است",
       "search": "جستجو",
       "searchDescription": "با استفاده از کلمات کلیدی، اطلاعات صحیح را به سرعت پیدا کنید",
       "languageChange": "تغییر زبان",
@@ -1511,6 +1521,8 @@
       "privacyPolicy": "بیانیه حفاظت از داده ها"
     },
     "fr": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat est votre guide numérique pour l'Allemagne",
       "search": "Recherche",
       "searchDescription": "Trouvez rapidement la bonne information à l'aide de mots-clés",
       "languageChange": "Changement de langue",
@@ -1537,6 +1549,8 @@
       "privacyPolicy": "Déclaration de confidentialité"
     },
     "hr": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat je vaš digitalni vodič za Njemačku",
       "search": "Pretraživanje",
       "searchDescription": "Na temelju ključnih riječi brzo ćete pronaći odgovarajuću informaciju",
       "languageChange": "Promjena jezika",
@@ -1563,6 +1577,8 @@
       "privacyPolicy": "Izjava o zaštiti podataka"
     },
     "ku": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat rêbera te ya dîcîtal derbarê Almanyayê ye",
       "search": "Lêgerîn",
       "searchDescription": "Bi bikaranîna Peyvên Kilîtî, lêzanînên esseh û durust bilez peyde bike",
       "languageChange": "Guhertina Ziman",
@@ -1589,6 +1605,8 @@
       "privacyPolicy": "Daxuyaniya Parastina Daneyan"
     },
     "pl": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat to e-przewodnik po Niemczech",
       "search": "Wyszukiwarka",
       "searchDescription": "Szybko znajdź odpowiednią informację za pomocą haseł",
       "languageChange": "Zmiana języka",
@@ -1615,6 +1633,8 @@
       "privacyPolicy": "Oświadczenie o ochronie danych"
     },
     "ro": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat constituie ghidul dvs. digital pentru Germania",
       "search": "Căutare",
       "searchDescription": "Folosind cuvinte cheie, găsiți rapid informațiile importante",
       "languageChange": "Schimbarea limbii",
@@ -1641,6 +1661,8 @@
       "privacyPolicy": "Declarație privind confidențialitatea"
     },
     "ru": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat — это ваш цифровой гид по Германии",
       "search": "Поиск",
       "searchDescription": "Быстрый поиск необходимой информации по ключевым словам",
       "languageChange": "Смена языка",
@@ -1667,6 +1689,8 @@
       "privacyPolicy": "Политика конфиденциальности"
     },
     "so": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat waa tilmaamahaaga dhijitaalka ah ee Jarmalka",
       "search": "Raadin",
       "searchDescription": "U hel macluumaadka saxda ah si dhakhso leh adoo isticmaalaya ereyada furaha ah",
       "languageChange": "Bedelka luqadda",
@@ -1693,6 +1717,8 @@
       "privacyPolicy": "Ilaalinta xogta"
     },
     "ti": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat ናብ ጅርመን እትትኸድሉ መምርሒ እዩ።",
       "search": "ፈትሽ",
       "searchDescription": "ቁልፊ-ቃላት ብምጥቃም ነቲ ቅኑዕ ሓበሬታ ብቕልጡፍ ርኸብ",
       "languageChange": "ምቕያር ቋንቋ",
@@ -1719,6 +1745,8 @@
       "privacyPolicy": "ሓለዋ ዳታ/ሓበሬታ"
     },
     "tr": {
+      "integreat": "Integreat",
+      "integreatDescription": "Integreat, Almanya'daki dijital rehberinizdir",
       "search": "Arama",
       "searchDescription": "Anahtar kelimeler kullanarak doğru bilgileri hızlıca bulun",
       "languageChange": "Dil değişimi",
