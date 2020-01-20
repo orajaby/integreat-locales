@@ -9,11 +9,7 @@
         "disclaimer": "Impressum und Kontakt",
         "mainDisclaimer": "Impressum und Kontakt - Integreat",
         "pois": "Points of Interest",
-        "notFound": "Seite nicht gefunden",
-        "noPermission": "Standortzugriff erforderlich",
-        "loading": "Suche Standort...",
-        "notAvailable": "Standortbestimmung nicht aktiv",
-        "timeout": "Standortbestimmung fehlgeschlagen"
+        "notFound": "Seite nicht gefunden"
       },
       "metaDescription": "Integreat ist Ihr digitaler Guide für Deutschland. Finden Sie lokale Informationen, Events und Beratung. Immer aktuell und in Ihrer Sprache."
     },
@@ -1751,7 +1747,11 @@
       "nearbyPlaces": "Orte in der Nähe",
       "noNearbyPlaces": "Keine Orte in der Nähe gefunden.",
       "alert": "Hinweis",
-      "locationError": "Um Orte in der Nähe anzeigen zu können, müssen Ortungsdienste aktiviert werden."
+      "locationError": "Um Orte in der Nähe anzeigen zu können, müssen Ortungsdienste aktiviert werden.",
+      "noPermission": "Standortzugriff erforderlich",
+      "loading": "Suche Standort...",
+      "notAvailable": "Standortbestimmung nicht aktiv",
+      "timeout": "Standortbestimmung fehlgeschlagen"
     },
     "ar": {
       "searchCity": "البحث عن مكان",
