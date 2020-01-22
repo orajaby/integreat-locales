@@ -1788,7 +1788,7 @@
       "changeLanguage": "Sprache wechseln",
       "settings": "Einstellungen",
       "share": "Teilen",
-      "shareMessage": "Gerade gefunden:",
+      "shareMessage": "Gerade gefunden: {{message}}",
       "shareFailDefaultMessage": "Das Teilen des Inhalts ist leider fehlgeschlagen.",
       "disclaimer": "Impressum"
     },
@@ -1806,7 +1806,7 @@
       "changeLanguage": "تغيير اللغة",
       "settings": "الإعدادات",
       "share": "المشاركة",
-      "shareMessage": "تم حالاً العثور على:",
+      "shareMessage": "تم حالاً العثور على: {{message}}",
       "shareFailDefaultMessage": "للأسف، فشل في مشاركة المحتوى.",
       "disclaimer": "هيئة التحرير"
     },
@@ -1824,7 +1824,7 @@
       "changeLanguage": "Change language",
       "settings": "Settings",
       "share": "Share",
-      "shareMessage": "Just found:",
+      "shareMessage": "Just found: {{message}}",
       "shareFailDefaultMessage": "Unfortunately an error occurred when sharing the content.",
       "disclaimer": "Imprint"
     },
@@ -1842,7 +1842,7 @@
       "changeLanguage": "Cambiar idioma",
       "settings": "Ajustes",
       "share": "Compartir",
-      "shareMessage": "Acabamos de encontrar:",
+      "shareMessage": "Acabamos de encontrar: {{message}}",
       "shareFailDefaultMessage": "No se ha podido compartir el contenido.",
       "disclaimer": "Aviso legal"
     },
@@ -1860,7 +1860,7 @@
       "changeLanguage": "تغییر زبان",
       "settings": "تنظیمات",
       "share": "به اشتراک گذاری",
-      "shareMessage": "اکنون یافت شد:",
+      "shareMessage": "اکنون یافت شد: {{message}}",
       "shareFailDefaultMessage": "متأسفانه به اشتراک گذاشتن محتوا انجام نشد.",
       "disclaimer": "اطلاعات ناشر"
     },
@@ -1878,7 +1878,7 @@
       "changeLanguage": "Modifier la langue",
       "settings": "Paramètres",
       "share": "Partager",
-      "shareMessage": "Tout juste trouvé :",
+      "shareMessage": "Tout juste trouvé : {{message}}",
       "shareFailDefaultMessage": "Le partage du contenu a malheureusement échoué.",
       "disclaimer": "Mentions légales"
     },
@@ -1896,7 +1896,7 @@
       "changeLanguage": "Promjena jezika",
       "settings": "Postavke",
       "share": "Podijeli",
-      "shareMessage": "Upravo pronađeno:",
+      "shareMessage": "Upravo pronađeno: {{message}}",
       "shareFailDefaultMessage": "Dijeljenje sadržaja nažalost nije uspjelo.",
       "disclaimer": "Impresum"
     },
@@ -1914,7 +1914,7 @@
       "changeLanguage": "Guhertina Ziman",
       "settings": "Eyarkirin",
       "share": "Parvekirin",
-      "shareMessage": "Niha hat dîtin:",
+      "shareMessage": "Niha hat dîtin: {{message}}",
       "shareFailDefaultMessage": "Mixabin parvekirina babetên pêk nehat.",
       "disclaimer": "Lêzanînên Weşîner"
     },
@@ -1932,7 +1932,7 @@
       "changeLanguage": "Zmień język",
       "settings": "Ustawienia",
       "share": "Udostępnij",
-      "shareMessage": "Właśnie znaleziono:",
+      "shareMessage": "Właśnie znaleziono: {{message}}",
       "shareFailDefaultMessage": "Niestety udostępnianie treści nie powiodło się.",
       "disclaimer": "Nota prawna"
     },
@@ -1950,7 +1950,7 @@
       "changeLanguage": "Schimbați limba",
       "settings": "Setări",
       "share": "Distribuiți",
-      "shareMessage": "Tocmai s-a găsit:",
+      "shareMessage": "Tocmai s-a găsit: {{message}}",
       "shareFailDefaultMessage": "Distribuirea conținutului a eșuat.",
       "disclaimer": "Caseta tehnică"
     },
@@ -1968,7 +1968,7 @@
       "changeLanguage": "Изменить язык",
       "settings": "Настройки",
       "share": "Поделиться",
-      "shareMessage": "Найдено:",
+      "shareMessage": "Найдено: {{message}}",
       "shareFailDefaultMessage": "К сожалению, не удалось поделиться содержимым.",
       "disclaimer": "Выходные данные"
     },
@@ -1986,7 +1986,7 @@
       "changeLanguage": "Bedel luuqadda",
       "settings": "Dejinta (setting-ka)",
       "share": "La Wadaag",
-      "shareMessage": "Hada la helay:",
+      "shareMessage": "Hada la helay: {{message}}",
       "shareFailDefaultMessage": "Nasiib darro, wadaagista tusmada ayaa lagu guuldaraystay.",
       "disclaimer": "Qoraa"
     },
@@ -2004,7 +2004,7 @@
       "changeLanguage": "ቋንቋ ቀይር",
       "settings": "ምትኽኻላት",
       "share": "ኣካፍል",
-      "shareMessage": "ተረኺቡ ኣሎ፥",
+      "shareMessage": "ተረኺቡ ኣሎ፥ {{message}}",
       "shareFailDefaultMessage": "ሕማቕ ኣጋጣሚ ኾይኑ፡ ምክፋል እቲ ትሕዝቶ ኣይተዓወተን።",
       "disclaimer": "ደራሲ"
     },
@@ -2022,7 +2022,7 @@
       "changeLanguage": "Dil değiştir",
       "settings": "Ayarlar",
       "share": "Paylaş",
-      "shareMessage": "Şimdi bulundu:",
+      "shareMessage": "Şimdi bulundu: {{message}}",
       "shareFailDefaultMessage": "İçeriğin paylaşılması maalesef başarısız.",
       "disclaimer": "Künye"
     }
