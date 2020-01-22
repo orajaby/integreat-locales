@@ -1749,8 +1749,8 @@
       "alert": "Hinweis",
       "locationError": "Um Orte in der Nähe anzeigen zu können, müssen Ortungsdienste aktiviert werden.",
       "noPermission": "Standortzugriff erforderlich",
-      "loading": "Suche Standort...",
-      "notAvailable": "Standortbestimmung nicht aktiv",
+      "loading": "Bestimme Standort...",
+      "notAvailable": "Standortbestimmung deaktiviert",
       "timeout": "Standortbestimmung fehlgeschlagen"
     },
     "ar": {
