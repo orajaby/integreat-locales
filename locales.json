@@ -1885,7 +1885,12 @@
       "noTranslation": "Keine Übersetzung verfügbar",
       "search": "Suchen",
       "changeLocation": "Standort wechseln",
-      "changeLanguage": "Sprache wechseln"
+      "changeLanguage": "Sprache wechseln",
+      "settings": "Einstellungen",
+      "share": "Teilen",
+      "shareMessage": "Gerade gefunden:",
+      "shareFailDefaultMessage": "Das Teilen des Inhalts ist leider fehlgeschlagen.",
+      "disclaimer": "Impressum"
     },
     "ar": {
       "imprintAndContact": "هيئة التحرير وجهة الاتصال",
@@ -1898,7 +1903,12 @@
       "noTranslation": "لا توجد ترجمة متاحة",
       "search": "البحث",
       "changeLocation": "تغيير الموقع",
-      "changeLanguage": "تغيير اللغة"
+      "changeLanguage": "تغيير اللغة",
+      "settings": "الإعدادات",
+      "share": "المشاركة",
+      "shareMessage": "تم حالاً العثور على:",
+      "shareFailDefaultMessage": "للأسف، فشل في مشاركة المحتوى.",
+      "disclaimer": "هيئة التحرير"
     },
     "en": {
       "imprintAndContact": "Imprint and contacts",
@@ -1911,7 +1921,12 @@
       "noTranslation": "No translation available",
       "search": "Search",
       "changeLocation": "Change location",
-      "changeLanguage": "Change language"
+      "changeLanguage": "Change language",
+      "settings": "Settings",
+      "share": "Share",
+      "shareMessage": "Just found:",
+      "shareFailDefaultMessage": "Unfortunately an error occurred when sharing the content.",
+      "disclaimer": "Imprint"
     },
     "es": {
       "imprintAndContact": "Aviso legal y contacto",
@@ -1924,7 +1939,12 @@
       "noTranslation": "No hay traducción disponible",
       "search": "Buscar",
       "changeLocation": "Cambiar ubicación",
-      "changeLanguage": "Cambiar idioma"
+      "changeLanguage": "Cambiar idioma",
+      "settings": "Ajustes",
+      "share": "Compartir",
+      "shareMessage": "Acabamos de encontrar:",
+      "shareFailDefaultMessage": "No se ha podido compartir el contenido.",
+      "disclaimer": "Aviso legal"
     },
     "fa": {
       "imprintAndContact": "اطلاعات ناشر و تماس",
@@ -1937,7 +1957,12 @@
       "noTranslation": "ترجمه موجود نیست",
       "search": "جستجو",
       "changeLocation": "تغییر محل",
-      "changeLanguage": "تغییر زبان"
+      "changeLanguage": "تغییر زبان",
+      "settings": "تنظیمات",
+      "share": "به اشتراک گذاری",
+      "shareMessage": "اکنون یافت شد:",
+      "shareFailDefaultMessage": "متأسفانه به اشتراک گذاشتن محتوا انجام نشد.",
+      "disclaimer": "اطلاعات ناشر"
     },
     "fr": {
       "imprintAndContact": "Mentions légales et contact",
@@ -1950,7 +1975,12 @@
       "noTranslation": "Aucune traduction disponible",
       "search": "Rechercher",
       "changeLocation": "Modifier le lieu",
-      "changeLanguage": "Modifier la langue"
+      "changeLanguage": "Modifier la langue",
+      "settings": "Paramètres",
+      "share": "Partager",
+      "shareMessage": "Tout juste trouvé :",
+      "shareFailDefaultMessage": "Le partage du contenu a malheureusement échoué.",
+      "disclaimer": "Mentions légales"
     },
     "hr": {
       "imprintAndContact": "Impresum i kontakt",
@@ -1963,7 +1993,12 @@
       "noTranslation": "Prijevod nije dostupan",
       "search": "Pretraživanje",
       "changeLocation": "Promjena lokacije",
-      "changeLanguage": "Promjena jezika"
+      "changeLanguage": "Promjena jezika",
+      "settings": "Postavke",
+      "share": "Podijeli",
+      "shareMessage": "Upravo pronađeno:",
+      "shareFailDefaultMessage": "Dijeljenje sadržaja nažalost nije uspjelo.",
+      "disclaimer": "Impresum"
     },
     "ku": {
       "imprintAndContact": "Lêzanînên Weşîner û Têkillî",
@@ -1976,7 +2011,12 @@
       "noTranslation": "Werger tuneye",
       "search": "Lêgerîn",
       "changeLocation": "Guhertina Cih",
-      "changeLanguage": "Guhertina Ziman"
+      "changeLanguage": "Guhertina Ziman",
+      "settings": "Eyarkirin",
+      "share": "Parvekirin",
+      "shareMessage": "Niha hat dîtin:",
+      "shareFailDefaultMessage": "Mixabin parvekirina babetên pêk nehat.",
+      "disclaimer": "Lêzanînên Weşîner"
     },
     "pl": {
       "imprintAndContact": "Nota prawna i kontakt",
@@ -1989,7 +2029,12 @@
       "noTranslation": "Brak dostępnego tłumaczenia",
       "search": "Wyszukaj",
       "changeLocation": "Zmień placówkę",
-      "changeLanguage": "Zmień język"
+      "changeLanguage": "Zmień język",
+      "settings": "Ustawienia",
+      "share": "Udostępnij",
+      "shareMessage": "Właśnie znaleziono:",
+      "shareFailDefaultMessage": "Niestety udostępnianie treści nie powiodło się.",
+      "disclaimer": "Nota prawna"
     },
     "ro": {
       "imprintAndContact": "Caseta tehnică și contact",
@@ -2002,7 +2047,12 @@
       "noTranslation": "Nicio traducere disponibilă",
       "search": "Căutare",
       "changeLocation": "Schimbați locația",
-      "changeLanguage": "Schimbați limba"
+      "changeLanguage": "Schimbați limba",
+      "settings": "Setări",
+      "share": "Distribuiți",
+      "shareMessage": "Tocmai s-a găsit:",
+      "shareFailDefaultMessage": "Distribuirea conținutului a eșuat.",
+      "disclaimer": "Caseta tehnică"
     },
     "ru": {
       "imprintAndContact": "Выходные данные и контактная информация",
@@ -2015,7 +2065,12 @@
       "noTranslation": "Перевод недоступен",
       "search": "Поиск",
       "changeLocation": "Изменить местоположение",
-      "changeLanguage": "Изменить язык"
+      "changeLanguage": "Изменить язык",
+      "settings": "Настройки",
+      "share": "Поделиться",
+      "shareMessage": "Найдено:",
+      "shareFailDefaultMessage": "К сожалению, не удалось поделиться содержимым.",
+      "disclaimer": "Выходные данные"
     },
     "so": {
       "imprintAndContact": "Faahfaahinta qoraaga iyo macaluumaadkiisa xiriirka",
@@ -2028,7 +2083,12 @@
       "noTranslation": "Turjumaad lama heli karo",
       "search": "Raadin",
       "changeLocation": "Bedel goobta",
-      "changeLanguage": "Bedel luuqadda"
+      "changeLanguage": "Bedel luuqadda",
+      "settings": "Dejinta (setting-ka)",
+      "share": "La Wadaag",
+      "shareMessage": "Hada la helay:",
+      "shareFailDefaultMessage": "Nasiib darro, wadaagista tusmada ayaa lagu guuldaraystay.",
+      "disclaimer": "Qoraa"
     },
     "ti": {
       "imprintAndContact": "ናይ ደራሲ ዝርዝራት ሓበሬታን ናይ ርክብን",
@@ -2041,7 +2101,12 @@
       "noTranslation": "ትርጉም የለን",
       "search": "ፈትሽ",
       "changeLocation": "ቦታ ቀይር",
-      "changeLanguage": "ቋንቋ ቀይር"
+      "changeLanguage": "ቋንቋ ቀይር",
+      "settings": "ምትኽኻላት",
+      "share": "ኣካፍል",
+      "shareMessage": "ተረኺቡ ኣሎ፥",
+      "shareFailDefaultMessage": "ሕማቕ ኣጋጣሚ ኾይኑ፡ ምክፋል እቲ ትሕዝቶ ኣይተዓወተን።",
+      "disclaimer": "ደራሲ"
     },
     "tr": {
       "imprintAndContact": "Künye ve iletişim",
@@ -2054,7 +2119,12 @@
       "noTranslation": "Çeviri yok",
       "search": "Ara",
       "changeLocation": "Konum değiştir",
-      "changeLanguage": "Dil değiştir"
+      "changeLanguage": "Dil değiştir",
+      "settings": "Ayarlar",
+      "share": "Paylaş",
+      "shareMessage": "Şimdi bulundu:",
+      "shareFailDefaultMessage": "İçeriğin paylaşılması maalesef başarısız.",
+      "disclaimer": "Künye"
     }
   },
   "search": {
