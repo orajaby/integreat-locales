@@ -1,13 +1,15 @@
 {
   "native": {
     "de": {
-      "NSPhotoLibraryAddUsageDescription": "Um Bilder zu speichern, benötigt Integreat Zugriff auf die Galerie."
+      "NSPhotoLibraryAddUsageDescription": "Um Bilder zu speichern, benötigt Integreat Zugriff auf die Galerie.",
+      "NSLocationWhenInUseUsageDescription": "Um nahegelegene Orte zu finden, benötigt Integreat Zugriff auf den Standort."
     },
     "ar": {
       "NSPhotoLibraryAddUsageDescription": "لحفظ الصور، يحتاج تطبيق إنتجريت الوصول إلى المعرض."
     },
     "en": {
-      "NSPhotoLibraryAddUsageDescription": "To save images, Integreat requires access to the gallery."
+      "NSPhotoLibraryAddUsageDescription": "Integreat wants to save photos to your library.",
+      "NSLocationWhenInUseUsageDescription": "Integreat wants to use your location to find nearby cities."
     },
     "es": {
       "NSPhotoLibraryAddUsageDescription": "Para guardar imágenes, Integreat necesita un acceso a la galería."
