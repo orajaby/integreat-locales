@@ -2247,7 +2247,11 @@
       "deactivateFeature": "Feature deaktivieren",
       "locationPermissionMissing": "Standortzugriff zum Vorschlagen von nahegelegenen Orten erforderlich",
       "pushNotificationPermissionMissing": "Berechtigungen zum Senden von Push-Benachrichtigungen erforderlich",
-      "deactivate": "Deaktivieren"
+      "deactivate": "Deaktivieren",
+      "coronaMessage": "Aktuelle, wissenschaftliche Informationen finden Sie bei der Bundeszentrale für gesundheitliche Aufklärung.",
+      "coronaUrl": "https://www.infektionsschutz.de/coronavirus/",
+      "learnMore": "Mehr Infos",
+      "dismiss": "Schließen"
     },
     "ar": {
       "grantPermission": "السماح",
@@ -2255,7 +2259,11 @@
     },
     "en": {
       "grantPermission": "Allow",
-      "deactivateFeature": "Deactivate feature"
+      "deactivateFeature": "Deactivate feature",
+      "coronaMessage": "Get the latest information from the WHO about coronavirus.",
+      "coronaUrl": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public",
+      "learnMore": "Learn more",
+      "dismiss": "Dismiss"
     },
     "es": {
       "grantPermission": "Permitir",
